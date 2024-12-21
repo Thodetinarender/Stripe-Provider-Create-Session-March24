@@ -72,7 +72,7 @@ public class InitiatePaymentRequestHandler {
 		initiatePaymentRequestPayload.put("mode",MODE_PAYMENT );
 		initiatePaymentRequestPayload.put("currency", stripeProviderRequest.getCurrency());
 		initiatePaymentRequestPayload.put("success_url", stripeProviderRequest.getSuccessUrl());
-		initiatePaymentRequestPayload.put("cancel_url", stripeProviderRequest.getCancelUrl());
+		initiatePaymentRequestPayload.put("cancel_url", stripeProviderRequest.getCancleUrl());
 
 		LogMessage.log(LOGGER, "STRIPE form data is :: " + initiatePaymentRequestPayload);
 		return initiatePaymentRequestPayload;
